@@ -72,15 +72,15 @@
             this.btnGerar.TabIndex = 4;
             this.btnGerar.Text = "Gerar";
             this.btnGerar.UseVisualStyleBackColor = true;
+            this.btnGerar.Click += new System.EventHandler(this.btnGerar_Click);
             // 
             // txtPop
             // 
-            this.txtPop.Location = new System.Drawing.Point(12, 140);
+            this.txtPop.Location = new System.Drawing.Point(12, 151);
             this.txtPop.Name = "txtPop";
-            this.txtPop.Size = new System.Drawing.Size(977, 351);
+            this.txtPop.Size = new System.Drawing.Size(977, 340);
             this.txtPop.TabIndex = 5;
             this.txtPop.Text = "";
-            this.txtPop.TextChanged += new System.EventHandler(this.txtPop_TextChanged);
             // 
             // TestCrossover
             // 

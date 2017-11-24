@@ -18,7 +18,7 @@ namespace AlgoritmoGenetico
             InitializeComponent();
         }
 
-        private void bntGerar_Click(object sender, EventArgs e)
+        private void btnGerar_Click(object sender, EventArgs e)
         {
             Class.AlgoritmoGenetico ag = new Class.AlgoritmoGenetico(1f, 0);
             Individuo pai = new Individuo();

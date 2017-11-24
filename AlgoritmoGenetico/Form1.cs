@@ -20,9 +20,15 @@ namespace AlgoritmoGenetico
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Gera o individuo e printa em txtIndividuo
             Individuo ind = new Individuo();
-
             txtIndividuo.Text = ind.PrintIndividuo();
+
+            //Catálogo
+            //Monstar print de cabeçalho para apresentação dos resultados
+
+            Populacao pop = new Populacao();
+            txtPopulacao.Text = pop.printPop();
         }
     }
 }

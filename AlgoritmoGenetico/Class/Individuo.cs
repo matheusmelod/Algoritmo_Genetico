@@ -19,7 +19,7 @@ namespace AlgoritmoGenetico.Class
         public Individuo()
         {
             //Instancia o cromossomo com a quantidade de bits informado na classe constantes
-            this.cromossomo = new BitArray(Constants.sizeComossomo);
+            this.cromossomo = new BitArray(Constants.sizeCromossomo);
 
             int i;
 
@@ -104,7 +104,7 @@ namespace AlgoritmoGenetico.Class
         {
 
             string result = string.Empty; //Empty, string tpo nula
-            result += "Bits: ";             //Print Array de bits
+            result += "\nBits: ";             //Print Array de bits
             for(int i = cromossomo.Length - 1; i >= 0; i--)
             {
                 //Converte o bool em base 2 (1 ou 0)
@@ -112,7 +112,7 @@ namespace AlgoritmoGenetico.Class
             }
 
 
-            result += "   INT:  " + getInt() + "   Aptidão:   " + getFitness() + "   Porcentagem:   " + getFitnessPercent() + "\n";
+            result = result + "   INT:  " + getInt() + "   Aptidão:   " + getFitness() + "   Porcentagem:   " + getFitnessPercent();
 
             return result;
         }

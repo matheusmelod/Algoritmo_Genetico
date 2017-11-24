@@ -13,6 +13,10 @@ namespace AlgoritmoGenetico
 {
     public partial class TestCrossover : Form
     {
+        Populacao pop = new Populacao();
+
+        Class.AlgoritmoGenetico ag = new Class.AlgoritmoGenetico(0.8f, 0.01f); // ( Taxa de crossover , Taxa de Mutação)
+
         public TestCrossover()
         {
             InitializeComponent();
@@ -20,7 +24,7 @@ namespace AlgoritmoGenetico
 
         private void btnGerar_Click(object sender, EventArgs e)
         {
-            Class.AlgoritmoGenetico ag = new Class.AlgoritmoGenetico(1f, 0);
+            //Class.AlgoritmoGenetico ag = new Class.AlgoritmoGenetico(1f, 0);
             Individuo pai = new Individuo();
             Individuo mae = new Individuo();
 
@@ -31,10 +35,13 @@ namespace AlgoritmoGenetico
 
             txtFilho1.Text = filhos[0].PrintIndividuo();
             txtFilho2.Text = filhos[1].PrintIndividuo();
+        }
 
-            Populacao pop = new Populacao();
-
-            txtPop.Text = ag.executaAG(pop).printPop();
+        private void button1_Click(object sender, EventArgs e)
+        {
+            pop = ag.executaAG(pop);
+            txtPop.Text = pop.printPop();
+            lbMedia.Text = pop.getMediaPopulacao().ToString();
         }
     }
 }

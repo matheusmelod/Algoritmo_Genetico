@@ -41,6 +41,8 @@
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
+            this.btnIniciarAG = new System.Windows.Forms.Button();
+            this.btnCriarPop = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // zedPopulacao
@@ -139,29 +141,55 @@
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
             this.maskedTextBox1.TabIndex = 9;
-            this.maskedTextBox1.Text = "0";
+            this.maskedTextBox1.Text = "080";
             this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
-            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
             // maskedTextBox2
             // 
             this.maskedTextBox2.Location = new System.Drawing.Point(117, 33);
+            this.maskedTextBox2.Mask = "0,00";
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.Size = new System.Drawing.Size(100, 20);
             this.maskedTextBox2.TabIndex = 10;
+            this.maskedTextBox2.Text = "001";
             // 
             // maskedTextBox3
             // 
             this.maskedTextBox3.Location = new System.Drawing.Point(117, 60);
+            this.maskedTextBox3.Mask = "00000";
             this.maskedTextBox3.Name = "maskedTextBox3";
             this.maskedTextBox3.Size = new System.Drawing.Size(100, 20);
             this.maskedTextBox3.TabIndex = 11;
+            this.maskedTextBox3.Text = "100";
+            this.maskedTextBox3.ValidatingType = typeof(int);
+            // 
+            // btnIniciarAG
+            // 
+            this.btnIniciarAG.Location = new System.Drawing.Point(538, 12);
+            this.btnIniciarAG.Name = "btnIniciarAG";
+            this.btnIniciarAG.Size = new System.Drawing.Size(167, 41);
+            this.btnIniciarAG.TabIndex = 13;
+            this.btnIniciarAG.Text = "Executar AG";
+            this.btnIniciarAG.UseVisualStyleBackColor = true;
+            this.btnIniciarAG.Click += new System.EventHandler(this.btnIniciarAG_Click);
+            // 
+            // btnCriarPop
+            // 
+            this.btnCriarPop.Location = new System.Drawing.Point(357, 12);
+            this.btnCriarPop.Name = "btnCriarPop";
+            this.btnCriarPop.Size = new System.Drawing.Size(167, 41);
+            this.btnCriarPop.TabIndex = 14;
+            this.btnCriarPop.Text = "Criar População";
+            this.btnCriarPop.UseVisualStyleBackColor = true;
+            this.btnCriarPop.Click += new System.EventHandler(this.btnCriarPop_Click);
             // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1016, 551);
+            this.Controls.Add(this.btnCriarPop);
+            this.Controls.Add(this.btnIniciarAG);
             this.Controls.Add(this.maskedTextBox3);
             this.Controls.Add(this.maskedTextBox2);
             this.Controls.Add(this.maskedTextBox1);
@@ -195,5 +223,7 @@
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
         private System.Windows.Forms.MaskedTextBox maskedTextBox3;
+        private System.Windows.Forms.Button btnIniciarAG;
+        private System.Windows.Forms.Button btnCriarPop;
     }
 }

@@ -16,7 +16,7 @@ namespace AlgoritmoGenetico
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TestCrossover());
+            Application.Run(new TelaPrincipal());
         }
     }
 }

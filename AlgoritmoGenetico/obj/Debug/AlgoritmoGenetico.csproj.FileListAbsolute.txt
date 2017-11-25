@@ -10,3 +10,4 @@ C:\Users\Matheus\Documents\Visual Studio 2017\Project\My Projects\AlgoritmoGenet
 C:\Users\Matheus\Documents\Visual Studio 2017\Project\My Projects\AlgoritmoGenetico\AlgoritmoGenetico\obj\Debug\AlgoritmoGenetico.exe
 C:\Users\Matheus\Documents\Visual Studio 2017\Project\My Projects\AlgoritmoGenetico\AlgoritmoGenetico\obj\Debug\AlgoritmoGenetico.pdb
 C:\Users\Matheus\Documents\Visual Studio 2017\Project\My Projects\AlgoritmoGenetico\AlgoritmoGenetico\obj\Debug\AlgoritmoGenetico.TestCrossover.resources
+C:\Users\Matheus\Documents\Visual Studio 2017\Project\My Projects\AlgoritmoGenetico\AlgoritmoGenetico\obj\Debug\AlgoritmoGenetico.TelaPrincipal.resources

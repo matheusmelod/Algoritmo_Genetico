@@ -38,9 +38,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
+            this.txtTaxaCrossover = new System.Windows.Forms.MaskedTextBox();
+            this.txtTaxaMutacao = new System.Windows.Forms.MaskedTextBox();
+            this.txtIteracoes = new System.Windows.Forms.MaskedTextBox();
             this.btnIniciarAG = new System.Windows.Forms.Button();
             this.btnCriarPop = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -134,34 +134,34 @@
             this.richTextBox2.TabIndex = 8;
             this.richTextBox2.Text = "";
             // 
-            // maskedTextBox1
+            // txtTaxaCrossover
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(117, 6);
-            this.maskedTextBox1.Mask = "0,00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox1.TabIndex = 9;
-            this.maskedTextBox1.Text = "080";
-            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
+            this.txtTaxaCrossover.Location = new System.Drawing.Point(117, 6);
+            this.txtTaxaCrossover.Mask = "0,00";
+            this.txtTaxaCrossover.Name = "txtTaxaCrossover";
+            this.txtTaxaCrossover.Size = new System.Drawing.Size(100, 20);
+            this.txtTaxaCrossover.TabIndex = 9;
+            this.txtTaxaCrossover.Text = "080";
+            this.txtTaxaCrossover.ValidatingType = typeof(System.DateTime);
             // 
-            // maskedTextBox2
+            // txtTaxaMutacao
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(117, 33);
-            this.maskedTextBox2.Mask = "0,00";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox2.TabIndex = 10;
-            this.maskedTextBox2.Text = "001";
+            this.txtTaxaMutacao.Location = new System.Drawing.Point(117, 33);
+            this.txtTaxaMutacao.Mask = "0,00";
+            this.txtTaxaMutacao.Name = "txtTaxaMutacao";
+            this.txtTaxaMutacao.Size = new System.Drawing.Size(100, 20);
+            this.txtTaxaMutacao.TabIndex = 10;
+            this.txtTaxaMutacao.Text = "001";
             // 
-            // maskedTextBox3
+            // txtIteracoes
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(117, 60);
-            this.maskedTextBox3.Mask = "00000";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox3.TabIndex = 11;
-            this.maskedTextBox3.Text = "100";
-            this.maskedTextBox3.ValidatingType = typeof(int);
+            this.txtIteracoes.Location = new System.Drawing.Point(117, 60);
+            this.txtIteracoes.Mask = "00000";
+            this.txtIteracoes.Name = "txtIteracoes";
+            this.txtIteracoes.Size = new System.Drawing.Size(100, 20);
+            this.txtIteracoes.TabIndex = 11;
+            this.txtIteracoes.Text = "100";
+            this.txtIteracoes.ValidatingType = typeof(int);
             // 
             // btnIniciarAG
             // 
@@ -190,9 +190,9 @@
             this.ClientSize = new System.Drawing.Size(1016, 551);
             this.Controls.Add(this.btnCriarPop);
             this.Controls.Add(this.btnIniciarAG);
-            this.Controls.Add(this.maskedTextBox3);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.txtIteracoes);
+            this.Controls.Add(this.txtTaxaMutacao);
+            this.Controls.Add(this.txtTaxaCrossover);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label5);
@@ -220,9 +220,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
+        private System.Windows.Forms.MaskedTextBox txtTaxaCrossover;
+        private System.Windows.Forms.MaskedTextBox txtTaxaMutacao;
+        private System.Windows.Forms.MaskedTextBox txtIteracoes;
         private System.Windows.Forms.Button btnIniciarAG;
         private System.Windows.Forms.Button btnCriarPop;
     }

@@ -89,7 +89,7 @@ namespace AlgoritmoGenetico.Class
             //Se a condição para crossover aceita, executa o If e faz o crossover, senão, mantem as propriedades já inseridas acima 
             if(Constants.random.NextDouble() < taxaCrossover)
             {
-                Console.Write("Caiu na taxa de Crossover! Ponto de Corte: " + pontodeCorte + "\n");
+                //Console.Write("Caiu na taxa de Crossover! Ponto de Corte: " + pontodeCorte + "\n");
                 for(int i = pontodeCorte; i < Constants.sizeCromossomo; i++) //De forma randomica, define a posição do corte para mutação
                 {
                     //A partir do pontodeCorte

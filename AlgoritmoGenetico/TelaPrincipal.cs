@@ -81,7 +81,47 @@ namespace AlgoritmoGenetico
 
         private void btnIniciarAG_Click(object sender, EventArgs e)
         {
+            //Variaveis enriquecidas com os dados do txt
+            double taxaMutacao = double.Parse(txtTaxaMutacao.Text);
+            double taxaCrossover = double.Parse(txtTaxaMutacao.Text);
+            int iteracoes = int.Parse(txtIteracoes.Text);
 
+            //Criar Algoritmo Genetico
+            Class.AlgoritmoGenetico ag = new Class.AlgoritmoGenetico(taxaCrossover, taxaMutacao);
+
+            for(int i = 0; i < iteracoes; i++)
+            {
+                pop = ag.executaAG(pop);
+
+                mediaPopulacao.Add(i, pop.getMediaPopulacao());
+
+                zedMediaPopulacao.GraphPane.CurveList.Clear(); //Limpar zed toda vez que o for é executado
+                zedMediaPopulacao.GraphPane.GraphObjList.Clear();
+
+                zedPopulacao.GraphPane.CurveList.Clear();
+                zedPopulacao.GraphPane.GraphObjList.Clear();
+
+                populacaoGrafico = new PointPairList();
+
+                for(int j=0; j < Constants.sizePopulacao; j++)
+                {
+                    populacaoGrafico.Add(pop.getPopulacao()[j].getInt(), pop.getPopulacao()[j].getFitness());
+                }
+
+                //Incluindo no gráfico
+                LineItem media = paneMedia.AddCurve("Média", mediaPopulacao, Color.Red, SymbolType.None);
+                LineItem func = panePop.AddCurve("Função", curvaGrafico, Color.Red, SymbolType.None);
+                LineItem indv = panePop.AddStick("Individuo", populacaoGrafico, Color.Red);
+
+                //Atualizar Valores
+                zedPopulacao.AxisChange();
+                zedPopulacao.Invalidate();
+                zedPopulacao.Refresh();
+
+                zedMediaPopulacao.AxisChange();
+                zedMediaPopulacao.Invalidate();
+                zedMediaPopulacao.Refresh();
+            }
         }
     }
 }

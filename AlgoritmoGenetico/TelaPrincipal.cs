@@ -122,6 +122,26 @@ namespace AlgoritmoGenetico
                 zedMediaPopulacao.Invalidate();
                 zedMediaPopulacao.Refresh();
             }
+
+            //Ordenar novamente a população
+            pop.OrdenarPopulacao();
+
+            string pioresInds = string.Empty;
+            for(int i = 0; i < 10; i++)
+            {
+                pioresInds += pop.getPopulacao()[i].PrintIndividuo() + "\n";
+            }
+
+            string melhoresInds = string.Empty;
+            for (int i = Constants.sizePopulacao -1; i > (Constants.sizePopulacao - 1) - 10; i--)
+            {
+                melhoresInds += pop.getPopulacao()[i].PrintIndividuo() + "\n";
+            }
+
+            //Imprimindo no Form
+            txtMelhoresInd.Text = melhoresInds;
+            txtPioresInd.Text = pioresInds;
+
         }
     }
 }

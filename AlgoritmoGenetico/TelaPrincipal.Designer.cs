@@ -36,8 +36,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.txtMelhoresInd = new System.Windows.Forms.RichTextBox();
+            this.txtPioresInd = new System.Windows.Forms.RichTextBox();
             this.txtTaxaCrossover = new System.Windows.Forms.MaskedTextBox();
             this.txtTaxaMutacao = new System.Windows.Forms.MaskedTextBox();
             this.txtIteracoes = new System.Windows.Forms.MaskedTextBox();
@@ -56,12 +56,12 @@
             this.zedPopulacao.ScrollMinX = 0D;
             this.zedPopulacao.ScrollMinY = 0D;
             this.zedPopulacao.ScrollMinY2 = 0D;
-            this.zedPopulacao.Size = new System.Drawing.Size(509, 329);
+            this.zedPopulacao.Size = new System.Drawing.Size(534, 329);
             this.zedPopulacao.TabIndex = 0;
             // 
             // zedMediaPopulacao
             // 
-            this.zedMediaPopulacao.Location = new System.Drawing.Point(538, 85);
+            this.zedMediaPopulacao.Location = new System.Drawing.Point(560, 85);
             this.zedMediaPopulacao.Name = "zedMediaPopulacao";
             this.zedMediaPopulacao.ScrollGrace = 0D;
             this.zedMediaPopulacao.ScrollMaxX = 0D;
@@ -70,7 +70,7 @@
             this.zedMediaPopulacao.ScrollMinX = 0D;
             this.zedMediaPopulacao.ScrollMinY = 0D;
             this.zedMediaPopulacao.ScrollMinY2 = 0D;
-            this.zedMediaPopulacao.Size = new System.Drawing.Size(466, 329);
+            this.zedMediaPopulacao.Size = new System.Drawing.Size(534, 329);
             this.zedMediaPopulacao.TabIndex = 1;
             // 
             // label1
@@ -112,32 +112,32 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(535, 417);
+            this.label5.Location = new System.Drawing.Point(557, 417);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(87, 13);
             this.label5.TabIndex = 6;
             this.label5.Text = "Piores Individuos";
             // 
-            // richTextBox1
+            // txtMelhoresInd
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(15, 433);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(509, 106);
-            this.richTextBox1.TabIndex = 7;
-            this.richTextBox1.Text = "";
+            this.txtMelhoresInd.Location = new System.Drawing.Point(15, 433);
+            this.txtMelhoresInd.Name = "txtMelhoresInd";
+            this.txtMelhoresInd.Size = new System.Drawing.Size(534, 106);
+            this.txtMelhoresInd.TabIndex = 7;
+            this.txtMelhoresInd.Text = "";
             // 
-            // richTextBox2
+            // txtPioresInd
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(538, 433);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(466, 106);
-            this.richTextBox2.TabIndex = 8;
-            this.richTextBox2.Text = "";
+            this.txtPioresInd.Location = new System.Drawing.Point(560, 433);
+            this.txtPioresInd.Name = "txtPioresInd";
+            this.txtPioresInd.Size = new System.Drawing.Size(534, 106);
+            this.txtPioresInd.TabIndex = 8;
+            this.txtPioresInd.Text = "";
             // 
             // txtTaxaCrossover
             // 
             this.txtTaxaCrossover.Location = new System.Drawing.Point(117, 6);
-            this.txtTaxaCrossover.Mask = "0,00";
+            this.txtTaxaCrossover.Mask = "0.00";
             this.txtTaxaCrossover.Name = "txtTaxaCrossover";
             this.txtTaxaCrossover.Size = new System.Drawing.Size(100, 20);
             this.txtTaxaCrossover.TabIndex = 9;
@@ -147,7 +147,7 @@
             // txtTaxaMutacao
             // 
             this.txtTaxaMutacao.Location = new System.Drawing.Point(117, 33);
-            this.txtTaxaMutacao.Mask = "0,00";
+            this.txtTaxaMutacao.Mask = "0.00";
             this.txtTaxaMutacao.Name = "txtTaxaMutacao";
             this.txtTaxaMutacao.Size = new System.Drawing.Size(100, 20);
             this.txtTaxaMutacao.TabIndex = 10;
@@ -165,7 +165,7 @@
             // 
             // btnIniciarAG
             // 
-            this.btnIniciarAG.Location = new System.Drawing.Point(538, 12);
+            this.btnIniciarAG.Location = new System.Drawing.Point(560, 22);
             this.btnIniciarAG.Name = "btnIniciarAG";
             this.btnIniciarAG.Size = new System.Drawing.Size(167, 41);
             this.btnIniciarAG.TabIndex = 13;
@@ -175,7 +175,7 @@
             // 
             // btnCriarPop
             // 
-            this.btnCriarPop.Location = new System.Drawing.Point(357, 12);
+            this.btnCriarPop.Location = new System.Drawing.Point(382, 22);
             this.btnCriarPop.Name = "btnCriarPop";
             this.btnCriarPop.Size = new System.Drawing.Size(167, 41);
             this.btnCriarPop.TabIndex = 14;
@@ -187,14 +187,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1016, 551);
+            this.ClientSize = new System.Drawing.Size(1106, 551);
             this.Controls.Add(this.btnCriarPop);
             this.Controls.Add(this.btnIniciarAG);
             this.Controls.Add(this.txtIteracoes);
             this.Controls.Add(this.txtTaxaMutacao);
             this.Controls.Add(this.txtTaxaCrossover);
-            this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.txtPioresInd);
+            this.Controls.Add(this.txtMelhoresInd);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -218,8 +218,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox txtMelhoresInd;
+        private System.Windows.Forms.RichTextBox txtPioresInd;
         private System.Windows.Forms.MaskedTextBox txtTaxaCrossover;
         private System.Windows.Forms.MaskedTextBox txtTaxaMutacao;
         private System.Windows.Forms.MaskedTextBox txtIteracoes;
